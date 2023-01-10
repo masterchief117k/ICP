@@ -14,4 +14,4 @@ public class A3_P1 {
         System.out.println("you are eligible to cast your vote");
     }
  }
-}
+}                                                                                   
