@@ -1,3 +1,4 @@
+package Assingment_3;
 import java.util.*;
 public class A3_q7 {
     public static void main(String[] args){
