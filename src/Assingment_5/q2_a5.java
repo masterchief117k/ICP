@@ -19,22 +19,28 @@ public class q2_a5
      int a,hold=0 ,b=0;
      System.out.println("Enter the number:");
      a=sc.nextInt();
-     for(int i=0; i<2;i++){
-        for(int j=2;j<a;j++){
-        if(a%j!=0){
-            System.out.println("Entered number is prime."+a);
+    for (int i = 2; i<a; i++){
+        if(a%i!=0){
             while(a!=0){
-             hold=hold*10+a%10;
-             a/=10;
-            b=a;
-            continue;           
-            }
+                b=b*10+a%10;
+                a/=10;
+            }   
+        
+            
         }else{
-            System.out.println("the number is not a twised prime");
+          
+            break;
         }
-        }
-        a=hold;
+    } 
+    
+    for(int i=2;i<b;i++){
+        if(b%i!=0){
+            System.out.println("The number is twiste prime");
+            break;
+    }else{
+        System.out.println("The number is not twisted prime");
+        break;
     }
-
     }
 }
+ }
