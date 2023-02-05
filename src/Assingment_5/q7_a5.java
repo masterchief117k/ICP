@@ -15,10 +15,10 @@ Write a program to print the following outputs using for loops:
  $ $ 
  $ 
  
- (c) 1 
-    2 2 
-   3 3 3 
-  4 4 4 4 
+ (c)     1 
+       2 2 
+     3 3 3 
+   4 4 4 4 
  5 5 5 5 5  */
 package Assingment_5;
 import java.util.*;
@@ -39,13 +39,16 @@ public class q7_a5 {
     }
     System.out.println("\nc)");
     for (int i = 1; i <= 5; i++) {
-        for (int j = 1; j <= 5 - i; j++) {
+       
+        for (int j = 1; j <= 5-i; j++) {
             System.out.print(" ");
         }
         for (int k = 1; k <= i; k++) {
-            System.out.print(i + " ");
+            System.out.print(i);
         }
-        System.out.println();
-    }
+        System.out.println("");
+    
+       
+}
     }
 }
