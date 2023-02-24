@@ -9,8 +9,6 @@ Write a java program that uses this method to display the first 100 pentagonal n
  */
 package Assingment_6;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 public class q2_a6 {
 
     public static int getPentagonalNumber(int n){

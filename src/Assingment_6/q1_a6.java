@@ -90,7 +90,7 @@ public class q1_a6 {
     else if(hold.equals("division")){
         div(a,b);
     } 
-    else if(hold.equals("remainder")){d
+    else if(hold.equals("remainder")){
         remain(a,b);
     } 
     else if(hold.equals("power")){
