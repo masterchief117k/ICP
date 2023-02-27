@@ -23,7 +23,12 @@ public class q4_a6 {
        Scanner sc = new Scanner(System.in);
        System.out.println("Enter the year");
        y=sc.nextInt();
-       a= numberOfDaysInAYear(y) ;
+       for(int i = 2000;i<=2020;i++) {
+
+        
+            a= numberOfDaysInAYear(i);
+            a=+a;
+        }
        System.out.println("the nuber of dsays in a year "+ y +" is "+a);
 
     }
