@@ -19,7 +19,7 @@ public class q5_a6 {
     public static void main(String[] args) {
         int side;
         double  number ;
-        System.out.println("Enter the side and number of sides: ");
+        System.out.println("Enter the number of side  and angle in degrees : ");
         double area;
         Scanner sc = new Scanner(System.in);
         
