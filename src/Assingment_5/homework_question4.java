@@ -6,23 +6,36 @@ import java.util.*;
 public class homework_question4 {
     public static void main(String[] args){
        
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter the value of theta");
+        
+        // define the value of x (in radians)
+        double x = Math.PI / 4;
 
-        double x = sc.nextDouble();
-        double result = 1.0;
-        double term = 1.0;
-        double factorial = 1.0;
-        int i = 1;
-  
-        while (Math.abs(term) > 1e-6) {
-           result += term;
-           i += 2;
-           factorial *= (i-1) * i;
-           term *= -(x * x) / factorial;
+        // define the number of terms in the series
+        int n = 10;
+
+        // initialize variables for the sum and the sign
+        double sum = 1.0;
+        int sign = -1;
+
+        // calculate the series using a loop
+        for (int i = 2; i <= n; i += 2) {
+            double term = Math.pow(x, i) / factorial(i);
+            sum += sign * term;
+            sign *= -1;
         }
-  
-        System.out.println(result-1);
+
+        // print the result
+        System.out.println("cos(" + x + ") = " + sum);
+    }
+
+    // helper method to calculate the factorial of a number
+    public static int factorial(int n) {
+        int result = 1;
+        for (int i = 2; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    }
 }
-}
+
 

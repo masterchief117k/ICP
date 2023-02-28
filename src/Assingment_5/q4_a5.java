@@ -23,7 +23,7 @@ public class q4_a5 {
     n= sc.nextInt();
     for(int i = m; i <= n; i++) {
       for(int j = 1; j <= i; j++) {
-       int c2=0;
+       
         count*=j;  
         
       }

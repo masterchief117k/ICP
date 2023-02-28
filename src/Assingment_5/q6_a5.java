@@ -48,16 +48,21 @@ public class q6_a5 {
             System.out.print(i+" ");
         }
     }
-    System.out.print("\n\nc)");
-    for(int i=1;i<=5;i++) {
-        System.out.println("");
-        int z=i;
-        for(int j=1;j<=i;j++){
-          System.out.print(z+" ");
-         z++;
-        }
+    System.out.println("\n\nc)");
+    int rows = 4, number = 1;
 
-    }System.out.print("\n\nd)");
+    for(int i = 1; i <= rows; i++) {
+
+      for(int j = 1; j <= i; j++) {
+        System.out.print(number + " ");
+        ++number;
+      }
+
+      System.out.println();
+    }
+        
+        
+    System.out.print("\n\nd)");
     for(int i=0;i<=5;i++) {
         System.out.println("");
         for(int j=1;j<=i;j++){
