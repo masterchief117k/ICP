@@ -4,22 +4,21 @@ cos (x) */
 package Assingment_5;
 import java.util.*;
 public class homework_question4 {
-    public static void main(String[] args){
-       
-        
+    public static void main(String[] args) {
+
         // define the value of x (in radians)
         double x = Math.PI / 4;
-
-        // define the number of terms in the series
-        int n = 10;
 
         // initialize variables for the sum and the sign
         double sum = 1.0;
         int sign = -1;
 
         // calculate the series using a loop
-        for (int i = 2; i <= n; i += 2) {
+        for (int i = 2; ; i += 2) {
             double term = Math.pow(x, i) / factorial(i);
+            if (Math.abs(term) < 1e-6) {
+                break;
+            }
             sum += sign * term;
             sign *= -1;
         }
