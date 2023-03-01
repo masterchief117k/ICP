@@ -16,11 +16,11 @@ public class homework_question4 {
         // calculate the series using a loop
         for (int i = 2; ; i += 2) {
             double term = Math.pow(x, i) / factorial(i);
-            if (Math.abs(term) < 1e-6) {
+            if (Math.abs(term) < 1e-6) {//1e^6 = 10^-6
                 break;
             }
             sum += sign * term;
-            sign *= -1;
+            sign *= -1;// sign=sign*-1
         }
 
         // print the result
