@@ -12,7 +12,6 @@ public class q_2 {
       arr[i]=sc.nextInt();
     }
     boolean isPrime =false;
-    int sum=0;
     for (int i = 0; i <n;i++) {
         for(int j=2; j<n; j++) {
         if (arr[i]%j==0){
