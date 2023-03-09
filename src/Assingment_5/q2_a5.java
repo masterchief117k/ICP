@@ -16,18 +16,17 @@ public class q2_a5
     public static void main(String[] args)
     {
      Scanner sc = new Scanner(System.in);
-     int a,hold=0 ,b=0;
+     int a,b=0;
      System.out.println("Enter the number:");
      a=sc.nextInt();
     for (int i = 2; i<a; i++){
-        if(a%i!=0){
+        if(a%i==0){    
+        }else{
             while(a!=0){
                 b=b*10+a%10;
                 a/=10;
             }   
         
-            
-        }else{
           
             break;
         }

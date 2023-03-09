@@ -21,17 +21,17 @@ public class q_4 {
         for (int i = 0; i < 5; i++) {
             array[i] = input.nextInt();
         }
-        int max = max(array);
-        System.out.println("The maximum number is: " + max);
+        int max = min(array);
+        System.out.println("The minimum  number is: " + max);
     }
 
-    public static int max(int[] array) {
-        int max = array[0];
+    public static int min(int[] array) {
+        int min = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (array[i] > max) {
-                max = array[i];
+            if (array[i] < min) {
+                min = array[i];
             }
         }
-        return max;
+        return min;
     }
 }
