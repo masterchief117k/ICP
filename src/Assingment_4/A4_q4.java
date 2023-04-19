@@ -25,4 +25,3 @@ public class A4_q4 {
     System.out.println("GCD: " + x);
 }
 }
-ds
